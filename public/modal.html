@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .sidebar{
+            position: fixed;
+            top:0;
+            left:0;
+            height: 100vh;
+            width: 300px;
+            background: #eee;
+        }
+        .content{
+            margin-left: 300px;
+        }
+        .modal{
+            background: rgba(0,0,0,0.7);
+            position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            z-index: 9;;
+        }
+        .modal-body{
+            background: #fff;
+            margin: 5rem auto;
+            height: 30%;
+            width: 30%;
+            text-align: center;
+        }
+        .positioned{
+            position: relative;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-body">
+            <h2>i am the modal</h2>
+        </div>
+    </div>
+    <div class="positioned">
+    </div>
+
+    <div class="sidebar"> i am a side bar </div>
+
+    <div class="content"><h1>i am the content</h1></div>
+</body>
+</html>
